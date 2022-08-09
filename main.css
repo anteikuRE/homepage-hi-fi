@@ -6,6 +6,7 @@
     --dark-blue-onhover: #355363;
     --red-orange: #FF6200;
     --light-blue: #08699E;
+    --aqua: #D6EFFD;
 }
 
 html {
@@ -45,7 +46,7 @@ button:hover {
     cursor: pointer;
 }
 
-.first-screen--nav {
+.first-screen__nav {
 
     padding-left: 60px;
     padding-right: 60px;
@@ -54,22 +55,22 @@ button:hover {
     justify-content: space-between;
 }
 
-.first-screen--products {
+.first-screen__products {
     z-index: 1;
     margin-right: auto;
 }
 
-.first-screen--products a {
+.first-screen__products a {
     color: var(--black);
     margin: 0 50px 0 50px;
 
 }
 
-.first-screen--get_started {
+.first-screen__get-started {
     z-index: 1;
 }
 
-.first-screen--get_started a {
+.first-screen__get-started a {
     font-weight: bold;
     color: var(--dark-blue);
     padding-right: 15px;
@@ -77,21 +78,7 @@ button:hover {
 
 /* FIRST SECTION BODY */
 
-.first-screen--back--img {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-
-}
-
-.first-screen--back--img img {
-    width: 810px;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-.first-screen--body {
+.first-screen__body {
     display: grid;
     justify-content: start;
     justify-items: start;
@@ -102,23 +89,23 @@ button:hover {
 
 }
 
-.first-screen--body--text {
+.first-screen__body__text {
     color: var(--dark-blue);
     line-height: 4em;
 }
 
-.first-screen--body--text h1 {
+.first-screen__body__text h1 {
     font-size: 55px;
     font-weight: 600;
 }
 
-.first-screen--body--text h1 span {
+.first-screen__body__text h1 span {
     font-weight: 700;
     font-size: 55px;
     color: var(--red-orange);
 }
 
-.first-screen--body--text h4 {
+.first-screen__body__text h4 {
     margin-bottom: -16px;
     font-weight: 700;
     font-size: 24px;
@@ -127,34 +114,47 @@ button:hover {
     color: var(--light-blue);
 }
 
-.first-screen--body--text button {
+.first-screen__body__text button {
     padding: 15px, 30px;
     width: 320px;
     font-size: 22px;
 }
 
-.first-screen--body--text--btm__tabs span {
+.first-screen__body__text__btm-tabs span {
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
     margin: 20px;
 }
 
+.first-screen__back__img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+.first-screen__back__img img {
+    width: 810px;
+    height: 100vh;
+    object-fit: cover;
+}
+
 /* FIRST SECTION FOOTER */
 
-.first-screen--footer {
+.first-screen__footer {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
 }
 
-.first-screen--footer--DSO {
+.first-screen__footer__DSO {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.first-screen--footer--DSO h1 {
+.first-screen__footer__DSO h1 {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -163,7 +163,7 @@ button:hover {
 
 
 
-.first-screen--footer--DSO span {
+.first-screen__footer__DSO span {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -171,7 +171,7 @@ button:hover {
     text-transform: none;
 }
 
-.first-screen--footer--stick {
+.first-screen__footer__stick {
     padding-bottom: 20px;
 }
 
@@ -181,7 +181,7 @@ button:hover {
 
 /* SECOND SECTION */
 
-.second-screen-label {
+.second-screen__label {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,7 +189,7 @@ button:hover {
     margin-top: 50px;
 }
 
-.second-screen-label h1 {
+.second-screen__label h1 {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
@@ -197,13 +197,95 @@ button:hover {
     color: var(--dark-blue);
 }
 
-.second-screen-label span {
+.second-screen__label span {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.3px;
     color: #000000;
+    padding-bottom: 50px;
 }
+
+.second-screen__rows-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 25px 10px;
+    justify-items: center;
+}
+
+.second-screen__row {
+    width: 300px;
+    /* height: 379px; */
+}
+
+.second-screen__row__img {
+    height: 165px;
+    background-color: #000000;
+    background-image: url(img/rowsImg.png);
+}
+
+.second-screen__row__txt-block {
+    border: 1px solid rgba(224, 229, 226, 1);
+    border-top: none;
+    /* padding: 20px; */
+}
+
+.second-screen__row__arrow__container {
+    height: 60px;
+}
+
+.second-screen__row__txt {
+    padding: 0px 15px 15px 15px;
+}
+
+.second-screen__row__label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+.second-screen__row__txt__logo {
+    display: flex;
+    align-items: center;
+}
+
+.second-screen__row__arrow__container img {
+    float: right;
+    width: 60px;
+    height: 60px;
+    /* background: var(--aqua); */
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 1s;
+    transform: rotateZ(0deg);
+
+}
+
+.second-screen__row__arrow__container {
+    background-color: #fff;
+    box-shadow: inset -60px 0 0 0 var(--aqua);
+    transition: ease-in 0.8s;
+
+}
+
+.second-screen__row__arrow__learn {
+    /* display: none; */
+    opacity: 0;
+    text-transform: capitalize;
+    line-height: 59px;
+    margin-left: 47%;
+    font-weight: 400;
+    color: #000000;
+
+    transition: all 1s;
+}
+
+/* .second-screen__row__arrow__container:hover {
+    box-shadow: inset -298px 0 0 0 var(--aqua);
+
+} */
 
 
 /* MODAL WINDOW */
@@ -280,7 +362,7 @@ button:hover {
     transition: ease-out, 0.7s;
 }
 
-.btn--close-modal {
+.btn__close_modal {
     font-family: inherit;
     color: inherit;
     position: absolute;
@@ -307,31 +389,31 @@ button:hover {
 /* RESPONSIVE */
 
 @media only screen and (max-width:1800px) {
-    .first-screen--body {
+    .first-screen__body {
         margin: 152px 926px 253px 72px;
     }
 
-    .first-screen--body--text {
+    .first-screen__body__text {
         line-height: 3.2em;
     }
 
-    .first-screen--body--text h1 {
+    .first-screen__body__text h1 {
         font-size: 48px;
     }
 
-    .first-screen--body--text h1 span {
+    .first-screen__body__text h1 span {
         font-size: 48px;
     }
 
-    .first-screen--body--text h4 {
+    .first-screen__body__text h4 {
         font-size: 19px;
     }
 
-    .first-screen--body--text button {
+    .first-screen__body__text button {
         width: 294px;
     }
 
-    .first-screen--body--text--btm__tabs span {
+    .first-screen__body__text__btm-tabs span {
         font-size: 18px;
     }
 
