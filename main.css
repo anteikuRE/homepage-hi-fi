@@ -1,5 +1,4 @@
 /* SETTINGS FOR ALL  */
-
 :root {
     --black: #010D14;
     --dark-blue: #03283C;
@@ -125,7 +124,6 @@ button:hover {
     border-radius: 100%;
     padding: 2px 20px;
     transition: ease-out, 0.7s;
-
 }
 
 .hidden {
@@ -134,9 +132,7 @@ button:hover {
 }
 
 /* FIRST SECTION */
-
 /* NAVBAR */
-
 #login {
     cursor: pointer;
 }
@@ -172,7 +168,6 @@ button:hover {
 }
 
 /* FIRST SECTION BODY */
-
 .first-screen__body {
     display: grid;
     justify-content: start;
@@ -181,7 +176,6 @@ button:hover {
     width: 75%;
     margin: 9% 0% 20% 15%;
     height: 100%;
-
 }
 
 .first-screen__body__text {
@@ -236,7 +230,6 @@ button:hover {
 }
 
 /* FIRST SECTION FOOTER */
-
 .first-screen__footer {
     display: flex;
     justify-content: space-evenly;
@@ -256,8 +249,6 @@ button:hover {
     color: var(--dark-blue);
 }
 
-
-
 .first-screen__footer__DSO span {
     font-weight: 400;
     font-size: 24px;
@@ -270,12 +261,7 @@ button:hover {
     padding-bottom: 20px;
 }
 
-
-
-
-
 /* SECOND SECTION */
-
 .second-screen__label {
     display: flex;
     flex-direction: column;
@@ -288,7 +274,6 @@ button:hover {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
-
     color: var(--dark-blue);
 }
 
@@ -311,7 +296,6 @@ button:hover {
 
 .second-screen__row {
     width: 300px;
-    /* height: 379px; */
 }
 
 .second-screen__row__img {
@@ -323,7 +307,6 @@ button:hover {
 .second-screen__row__txt-block {
     border: 1px solid rgba(224, 229, 226, 1);
     border-top: none;
-    /* padding: 20px; */
 }
 
 .second-screen__row__arrow__container {
@@ -350,12 +333,10 @@ button:hover {
     float: right;
     width: 60px;
     height: 60px;
-    /* background: var(--aqua); */
     margin-right: auto;
     cursor: pointer;
     transition: all 1s;
     transform: rotateZ(0deg);
-
 }
 
 .second-screen__row__arrow__container {
@@ -366,14 +347,12 @@ button:hover {
 }
 
 .second-screen__row__arrow__learn {
-    /* display: none; */
     opacity: 0;
     text-transform: capitalize;
     line-height: 59px;
     margin-left: 47%;
     font-weight: 400;
     color: #000000;
-
     transition: all 1s;
 }
 
@@ -392,7 +371,6 @@ button:hover {
 }
 
 /* BETWEEN  */
-
 .between-screen {
     height: 300px;
     display: flex;
@@ -408,7 +386,6 @@ button:hover {
     flex-direction: column;
     align-items: center;
 }
-
 
 .between-screen__text-content h1 {
     font-weight: 700;
@@ -470,7 +447,6 @@ button:hover {
 }
 
 /* SECOND BETWEEN */
-
 .between-screen-2 {
     height: 570px;
     background-color: var(--dark-blue);
@@ -520,7 +496,6 @@ button:hover {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-
 }
 
 .between-screen-2__window__text span {
@@ -531,7 +506,6 @@ button:hover {
 }
 
 /* FOURTH SECTION */
-
 .fourth-screen {
     display: flex;
 }
@@ -548,7 +522,6 @@ button:hover {
     flex-direction: column;
     padding-left: 90px;
     padding-right: 20em;
-
 }
 
 .fourth-screen__text__block h1 {
@@ -587,11 +560,8 @@ button:hover {
 }
 
 /* THIRD BETWEEN */
-
 .between-screen-3 {
-
     background-color: var(--dark-blue);
-
 }
 
 .between-screen-3__text {
@@ -603,7 +573,6 @@ button:hover {
     flex-direction: column;
     padding-top: 60px;
     padding-left: 80px;
-
 }
 
 .between-screen-3__text__block h1 {
@@ -657,9 +626,6 @@ button:hover {
 }
 
 /* LAST SECTION */
-
-.last-screen {}
-
 .last-screen__get-started {
     padding-top: 80px;
     display: flex;
@@ -701,14 +667,16 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin: 170px;
+    overflow: hidden;
 }
 
-.last-screen__our-team h1 {}
-
-.last-screen__our-team span {}
+.last-screen__our-team__slider__wrapper {
+    display: flex;
+}
 
 .last-screen__our-team__slider {
     display: flex;
+    transition: all, 1s;
 }
 
 .last-screen__our-team__slider__person {
@@ -717,10 +685,7 @@ button:hover {
     flex-direction: column;
     width: 400px;
     padding: 79px;
-
 }
-
-.last-screen__our-team__slider__person img {}
 
 .last-screen__our-team__slider__person h1 {
     font-weight: 700;
@@ -733,33 +698,24 @@ button:hover {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height, or 138% */
-
     letter-spacing: 0.3px;
-
-    /* Brand / Primary text */
     text-transform: none;
     color: #000000;
-
 }
 
 .last-screen__our-team__slider__person span {
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    /* or 157% */
-
     text-align: center;
     letter-spacing: 0.3px;
-
-    /* Brand / Primary text */
     text-transform: none;
     color: #000000;
 }
 
-
 .last-screen__our-team__arrows img {
-    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
 }
 
 .last-screen__subcribe {
@@ -817,8 +773,92 @@ button:hover {
     background: var(--dark-blue-onhover);
 }
 
-/* RESPONSIVE */
+.footer {
+    background-color: var(--dark-blue);
+}
 
+.footer__wrapper {
+    padding: 60px;
+}
+
+.footer__rows__wrapper {
+    display: flex;
+}
+
+.footer__rows {
+    position: relative;
+}
+
+.footer_row {
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    align-items: flex-start;
+    margin-right: 85px;
+}
+
+.footer_row h1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer_row a {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #B0BDB7;
+}
+
+.footer__rows span {
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #B0BDB7;
+}
+
+.footer__line {
+    margin-top: 35px;
+    opacity: 0.5;
+    border: 1px solid #D3DAD7;
+}
+
+.footer__contacts__copyright {
+    display: flex;
+}
+
+.footer__contacts__copyright img {
+    padding-right: 8px;
+}
+
+.footer__contacts__copyright h5 {
+    text-transform: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D3DAD7;
+}
+
+.footer__contacts__copyright h5 a {
+    color: var(--red-orange);
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts__icons a {
+    margin-left: 32px;
+}
+
+/* RESPONSIVE */
 @media only screen and (max-width:1800px) {
     .first-screen__body {
         margin: 152px 926px 253px 72px;
@@ -851,7 +891,6 @@ button:hover {
     .third-screen__text-block {
         padding-left: 80px;
     }
-
 
     .third-screen__text-block h1 {
         font-size: 48px;
@@ -892,5 +931,4 @@ button:hover {
         line-height: 22px;
         margin-top: 15px;
     }
-
 }
